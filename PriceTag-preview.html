@@ -1,0 +1,51 @@
+<!-- @dsCard group="Bán hàng" height=240 subtitle="Giá USD / VND — bản đỏ và bản sáng" -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Phudu:wght@700;800&family=Poppins:wght@500;700;800&display=swap">
+<style>
+  body { margin: 0; background: var(--surface); font-family: var(--font-body); }
+  .row { display: flex; flex-wrap: wrap; gap: var(--space-4); padding: var(--space-4); align-items: stretch; }
+  .card { background: var(--sky-tint); border-radius: var(--radius-card); padding: var(--space-4); }
+  .photo { background: var(--forest); border-radius: var(--radius-card); padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-1); }
+  .name { font-family: var(--font-body); font-weight: 800; font-size: 26px; line-height: 1.1; color: var(--brand-navy); margin: 0 0 var(--space-2); text-transform: uppercase; }
+  .save { font-family: var(--font-display); font-weight: 700; font-size: 18px; color: var(--brand-navy); margin: 0 0 var(--space-1); }
+  .pkg { font-family: var(--font-body); font-weight: 700; font-size: 15px; color: var(--on-dark); margin: 0; }
+  .pkg b { color: var(--brand-gold); }
+  .note { font-family: var(--font-body); font-weight: 500; font-size: 11px; font-style: italic; color: var(--on-dark); margin: 2px 0 var(--space-2) var(--space-3); }
+  .price-tag {
+    display: inline-block; align-self: flex-start; background: var(--price-red); color: var(--on-dark);
+    font-family: var(--font-display); font-weight: 700; font-size: 28px; line-height: 1;
+    padding: var(--space-2) var(--space-3); border-radius: var(--radius-pill);
+    box-shadow: 0 0 0 3px var(--cream), var(--shadow-card);
+  }
+  .price-tag.light {
+    background: linear-gradient(90deg, var(--brand-ice), var(--sky-tint)); color: var(--brand-navy);
+    box-shadow: 0 0 0 3px var(--surface), var(--shadow-card);
+  }
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="card">
+    <p class="name">Insta360</p>
+    <span class="price-tag">$20/500.000VND</span>
+  </div>
+  <div class="card">
+    <p class="save">★ SAVE 20%</p>
+    <p class="name">Best price combo</p>
+    <span class="price-tag">$30/800.000VND</span>
+  </div>
+  <div class="photo">
+    <p class="pkg">Drone HOẶC Insta360</p>
+    <span class="price-tag light">$20/500.000VND</span>
+    <p class="note">*áp dụng theo từng khách</p>
+    <p class="pkg"><b>COMBO</b> Drone VÀ Insta360</p>
+    <span class="price-tag light">$32/800.000VND</span>
+    <p class="note">*áp dụng theo từng khách</p>
+  </div>
+</div>
+<script></script>
+</body>
+</html>

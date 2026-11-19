@@ -1,0 +1,52 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Phudu:wght@800&family=Poppins:wght@500&display=swap">
+<style>
+  html, body { margin: 0; background: var(--surface); }
+  .cover { position: relative; width: 960px; height: 300px; overflow: hidden; background: var(--surface); }
+  svg { position: absolute; inset: 0; }
+  .navy { fill: var(--brand-navy); }
+  .gold { fill: var(--brand-gold); }
+  .brick { fill: var(--brick); }
+  .sky { fill: var(--sky); }
+  .cream { fill: var(--cream); }
+  .arc-gold { fill: none; stroke: var(--brand-gold); stroke-width: 8px; }
+  .arc-cream { fill: none; stroke: var(--cream); stroke-width: 8px; }
+  .text { position: absolute; left: 48px; bottom: 48px; max-width: 420px; }
+  .name { font-family: var(--font-display); font-weight: 800; font-size: 104px; line-height: .92; color: var(--brand-navy); margin: 0; }
+  .tag { font-family: var(--font-body); font-weight: 500; font-size: 14px; color: var(--cobalt); margin: 16px 0 0; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <svg width="960" height="300" viewBox="0 0 960 300" aria-hidden="true">
+    <!--
+      blocks: brand-navy slab 192×300, brand-gold disc r72 (the logo's sun), brick 248×132, sky 152×120, cream pill 120×40 (radius-pill = half short side)
+      arrangement: one tall navy slab bleeding top and bottom with satellites; brick and sky bleed off the right edge, like the logo's wing panels
+      pattern: concentric quarter-arcs (literal motif: the thổ cẩm spirals inside the logo's wing) in brand-gold on navy and cream on brick
+      steps & radii: arcs pitched at space-4 (24px) from r48; gaps space-5 (48px); square panels as in the logo, pill only for the price-tag motif
+    -->
+    <rect class="sky" x="808" y="0" width="152" height="120"/>
+    <rect class="navy" x="520" y="0" width="192" height="300"/>
+    <rect class="brick" x="712" y="168" width="248" height="132"/>
+    <circle class="gold" cx="760" cy="96" r="72"/>
+    <path class="arc-gold" d="M568 300 A48 48 0 0 1 520 252"/>
+    <path class="arc-gold" d="M592 300 A72 72 0 0 1 520 228"/>
+    <path class="arc-gold" d="M616 300 A96 96 0 0 1 520 204"/>
+    <path class="arc-gold" d="M640 300 A120 120 0 0 1 520 180"/>
+    <path class="arc-cream" d="M912 300 A48 48 0 0 1 960 252"/>
+    <path class="arc-cream" d="M888 300 A72 72 0 0 1 960 228"/>
+    <path class="arc-cream" d="M864 300 A96 96 0 0 1 960 204"/>
+    <rect class="cream" x="560" y="48" width="120" height="40" rx="20"/>
+  </svg>
+  <div class="text">
+    <p class="name">FlySapa</p>
+    <p class="tag">Bay dù lượn đôi giữa mây trời Sa Pa — See you up there.</p>
+  </div>
+</div>
+<script></script>
+</body>
+</html>
